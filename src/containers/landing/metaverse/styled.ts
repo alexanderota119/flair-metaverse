@@ -26,7 +26,7 @@ export const Shape = styled.div`
   flex-direction: column;
 
   h1 {
-    margin: 34.03px 0 0 30.5px;
+    margin: 34.03px 30.5px 0 30.5px;
     font-weight: 700;
     font-size: 80px;
     color: black;
@@ -41,19 +41,34 @@ export const Shape = styled.div`
   }
 
   @media screen and (max-width: 1100px) {
-    width: 98vw;
-  }
-
-  @media screen and (max-width: 900px) {
+    width: 90vw;
     h1 {
       font-size: 70px;
     }
   }
+
+  @media screen and (max-width: 900px) {
+    h1 {
+      font-size: 60px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 95vw;
+  }
+
   @media screen and (max-width: 800px) {
     h1 {
       font-size: 60px;
       line-height: 48px;
-      margin: 54.03px 0 0 30.5px;
+      margin-top: 54.03px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    h1 {
+      font-size: 60px;
+      line-height: 48px;
+      margin-top: 30.03px;
     }
   }
   @media screen and (max-width: 700px) {
