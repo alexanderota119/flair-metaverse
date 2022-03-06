@@ -1,6 +1,6 @@
 /**import modules */
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { FaEthereum } from 'react-icons/fa';
 /**import styled components */
 import {
@@ -40,7 +40,7 @@ import Shoe_6_Img from 'assets/images/Shoe-6.png';
 import Shoe_7_Img from 'assets/images/Shoe-7.png';
 
 const Profile: React.FC = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const [tabState, setTabState] = useState<number>(2);
 
