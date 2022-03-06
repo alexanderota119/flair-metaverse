@@ -1,11 +1,13 @@
 import styled from 'styled-components';
+import Home_bg_3_Img from 'assets/images/Home-bg-3.png';
+import Shape_Img from 'assets/images/Shape.png';
 
 export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: center;
-  background: url(assets/images/Home-bg-3.png) no-repeat;
+  background: url(${Home_bg_3_Img}) no-repeat;
   width: 100vw;
   background-position-x: center;
   height: auto;
@@ -20,7 +22,7 @@ export const MetaverseImg = styled.img`
 export const Shape = styled.div`
   width: 1028px;
   height: 310px;
-  background: url(assets/images/Shape.png) no-repeat;
+  background: url(${Shape_Img}) no-repeat;
   background-size: 100% 310px;
   display: flex;
   flex-direction: column;

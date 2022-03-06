@@ -33,7 +33,7 @@ const IntroductionContainer: React.FC = () => {
               1250: {
                 slidesPerView: 3,
               },
-              870: {
+              890: {
                 slidesPerView: 2,
               },
               0: {

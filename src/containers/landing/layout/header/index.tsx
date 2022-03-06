@@ -1,6 +1,6 @@
 /**import modules */
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 /**import styled components */
 import { HeaderContainer, RightCorner } from './styled';
 /**import assets */
@@ -9,15 +9,15 @@ import ProfileImg from 'assets/icons/Profile-IMG.png';
 const Header: React.FC = () => {
   return (
     <HeaderContainer>
-      <Link to="/">
+      <NavLink to="/">
         <h1>Flair</h1>
-      </Link>
+      </NavLink>
       <RightCorner>
-        <Link to="/">Explorer</Link>
-        <Link to="/create-profile">Create</Link>
-        <Link to="/profile">
+        <NavLink to="/profile">Explorer</NavLink>
+        <NavLink to="/profile/create">Create</NavLink>
+        <NavLink to="/profile/avatar">
           <img src={ProfileImg} alt="profile-img"></img>
-        </Link>
+        </NavLink>
       </RightCorner>
     </HeaderContainer>
   );

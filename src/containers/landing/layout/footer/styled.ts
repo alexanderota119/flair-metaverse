@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import FooterImg from 'assets/images/footer.png';
 
 export const StyledContainer = styled.div`
   align-self: center;
@@ -67,7 +68,7 @@ export const FooterSection = styled.div`
   margin-top: 200px;
   width: 100%;
   height: 120px;
-  background: url(assets/images/footer.png);
+  background: url(${FooterImg}) no-repeat;
   background-size: 100% 100%;
   padding: 30px 30px;
   display: flex;

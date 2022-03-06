@@ -6,7 +6,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 15px 0px 37px;
+  padding: 14px 30px 0px 37px;
   align-self: center;
 
   h1 {
@@ -23,6 +23,7 @@ export const HeaderContainer = styled.div`
     letter-spacing: 0.25;
     line-height: 41px;
     color: #ffffff;
+    display: flex;
   }
 `;
 

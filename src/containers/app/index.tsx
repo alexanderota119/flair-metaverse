@@ -1,20 +1,22 @@
 /**import modules */
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-/**import containers */
-import Landing from 'containers/landing';
+import React, { Suspense } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+/**import routes */
+import AppRoutes from 'app/routes';
 /**import custom style as global */
 import GlobalStyle from 'styles/global';
+/**import custom components */
+import Loading from 'components/loading';
 
 const App: React.FC = () => {
   return (
     <>
-      <GlobalStyle />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Landing />} />
-        </Routes>
-      </BrowserRouter>
+      <Suspense fallback={<Loading />}>
+        <GlobalStyle />
+        <BrowserRouter>
+          <AppRoutes />
+        </BrowserRouter>
+      </Suspense>
     </>
   );
 };

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
+import Home_Bg_1_Img from 'assets/images/Home-bg-1.png';
 
 export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(assets/images/Home-bg-1.png) no-repeat;
+  background: url(${Home_Bg_1_Img}) no-repeat;
   background-size: 100% 100%;
   width: 100vw;
   height: auto;
@@ -41,7 +42,7 @@ export const StyledContainer = styled.div`
       font-size: 70px;
     }
     @media screen and (max-width: 450px) {
-      font-size: 65px;
+      font-size: 60px;
       width: 380px;
     }
   }
@@ -55,11 +56,14 @@ export const StyledContainer = styled.div`
 export const SwiperOut = styled.div`
   max-width: 1600px;
   width: 100%;
-  padding: 0 16.25px 0 16.25px;
+  padding: 0 30px 0 30px;
   display: flex;
   align-items: center;
   grid-gap: 22px;
   margin-bottom: -100.88px;
+  @media screen and (max-width: 530px) {
+    padding: 0 20px 0 20px;
+  }
 `;
 
 export const NavigationPrev = styled.span`
@@ -70,7 +74,7 @@ export const NavigationPrev = styled.span`
   cursor: pointer;
   transform: rotate(180deg);
   z-index: 3;
-  @media screen and (max-width: 510px) {
+  @media screen and (max-width: 530px) {
     display: none;
   }
 `;
@@ -82,7 +86,7 @@ export const NavigationNext = styled.span`
   font-weight: 700;
   cursor: pointer;
   z-index: 3;
-  @media screen and (max-width: 510px) {
+  @media screen and (max-width: 530px) {
     display: none;
   }
 `;

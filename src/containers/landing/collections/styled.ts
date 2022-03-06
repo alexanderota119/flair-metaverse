@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Home_bg_2_Img from 'assets/images/Home-bg-2.png';
 
 export const StyledContainer = styled.div`
   margin-top: 89.93px;
@@ -182,7 +183,7 @@ export const HomeBack2 = styled.div`
   margin-top: -161.35px;
   width: 100vw;
   height: 903px;
-  background: url(assets/images/Home-bg-2.png) no-repeat;
+  background: url(${Home_bg_2_Img}) no-repeat;
   background-size: 100% auto;
   display: flex;
   justify-content: center;

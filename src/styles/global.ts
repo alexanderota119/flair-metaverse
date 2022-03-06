@@ -5,7 +5,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    background: black;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -36,13 +35,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #root {
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-
-    > * {
-      flex-shrink: 0;
-    }
+    overflow: hidden;
   }
 `;
 
