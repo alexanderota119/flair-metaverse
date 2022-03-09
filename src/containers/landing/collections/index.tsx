@@ -1,5 +1,6 @@
 /**import modules */
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FaEthereum } from 'react-icons/fa';
 import { useMediaQuery } from 'beautiful-react-hooks';
 /**import react swiper modules */
@@ -31,6 +32,7 @@ import Person4_Img from 'assets/images/Person-4.png';
 import TickIcon from 'assets/icons/Tick.png';
 
 const CollectionsContainer: React.FC = () => {
+  const navigate = useNavigate();
   const isMobile = useMediaQuery('(max-width: 399px)');
   const [buttonSize, setButtonSize] = useState<number>(296);
 
@@ -82,6 +84,7 @@ const CollectionsContainer: React.FC = () => {
                       marginTop: '123px',
                       backdropFilter: `blur(10px)`,
                     }}
+                    onClick={() => navigate('/profile')}
                   >
                     <span>Open Profile</span>
                     <span>→</span>
@@ -121,6 +124,7 @@ const CollectionsContainer: React.FC = () => {
                       marginTop: '123px',
                       backdropFilter: `blur(10px)`,
                     }}
+                    onClick={() => navigate('/profile')}
                   >
                     <span>Open Profile</span>
                     <span>→</span>
@@ -163,6 +167,7 @@ const CollectionsContainer: React.FC = () => {
                       marginTop: '123px',
                       backdropFilter: `blur(10px)`,
                     }}
+                    onClick={() => navigate('/profile')}
                   >
                     <span>Open Profile</span>
                     <span>→</span>
@@ -202,6 +207,7 @@ const CollectionsContainer: React.FC = () => {
                       marginTop: '123px',
                       backdropFilter: `blur(10px)`,
                     }}
+                    onClick={() => navigate('/profile')}
                   >
                     <span>Open Profile</span>
                     <span>→</span>
