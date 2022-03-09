@@ -25,6 +25,7 @@ const IntroductionContainer: React.FC = () => {
               prevEl: '.prev',
               nextEl: '.next',
             }}
+            loop={true}
             modules={[Navigation]}
             breakpoints={{
               1600: {
@@ -91,19 +92,6 @@ const IntroductionContainer: React.FC = () => {
                   </div>
                 </CardContent>
                 <CardImg src={Home_clothing_2_Img} left={70.82} marginBottom={59.95} />
-              </Card>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card>
-                <CardHeading />
-                <CardContent>
-                  <CardContentWrpper />
-                  <div>
-                    <span>Washington Wizard’s City Edition</span>
-                    <p>Nike</p>
-                  </div>
-                </CardContent>
-                <CardImg src={Home_clothing_1_Img} left={102.46} marginBottom={61.95} />
               </Card>
             </SwiperSlide>
           </Swiper>

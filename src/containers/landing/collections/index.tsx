@@ -50,6 +50,7 @@ const CollectionsContainer: React.FC = () => {
           <Swiper
             spaceBetween={10}
             slidesPerView={4}
+            loop={true}
             navigation={{
               prevEl: '.prevc',
               nextEl: '.nextc',
