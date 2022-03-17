@@ -1,22 +1,52 @@
 import styled from 'styled-components';
 import Home_bg_2_Img from 'assets/images/Home-bg-2.png';
+import Home_bg_3_Img from 'assets/images/Home-bg-3.png';
 
 export const StyledContainer = styled.div`
-  margin-top: 89.93px;
+  margin-top: 900px;
   max-width: 1600px;
   width: 100%;
   align-self: center;
   padding: 0 30px;
+  z-index: 1;
+  .absolute_img {
+    width: 90vw;
+    position: absolute;
+    left: 0;
+  }
+  .home-bg-3 {
+    position: absolute;
+    left: 0;
+    top: -70vh;
+    transform: translateX(-304px) rotate(90deg);
+    background: url(${Home_bg_3_Img}) no-repeat;
+    background-size: 100% 100%;
+    width: 1080px;
+    height: 608px;
+    z-index: -1;
+
+    @media screen and (max-width: 550px) {
+      display: none;
+    }
+  }
+
   h1 {
     color: white;
     font-weight: 700;
     font-size: 68px;
     line-height: 78px;
-    @media screen and (max-width: 1000px) {
-      text-align: center;
-    }
+    text-align: center;
+    z-index: 2;
     @media screen and (max-width: 600px) {
       font-size: 60px;
+    }
+
+    @media screen and (max-width: 520px) {
+      font-size: 45px;
+    }
+
+    @media screen and (max-width: 424px) {
+      font-size: 40px;
     }
   }
 
@@ -27,6 +57,10 @@ export const StyledContainer = styled.div`
 
   .swiper-slide {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin-top: 150px;
   }
 `;
 
@@ -241,5 +275,17 @@ export const Content = styled.div`
     h2 {
       font-size: 28px;
     }
+  }
+`;
+
+export const Divider = styled.div`
+  align-self: center;
+  background: #292929;
+  width: 1120px;
+  height: 3px;
+  margin-top: 80px;
+
+  @media screen and (max-width: 1200px) {
+    width: 80vw;
   }
 `;

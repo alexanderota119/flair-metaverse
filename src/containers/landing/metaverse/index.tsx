@@ -3,11 +3,11 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from 'beautiful-react-hooks';
 /**import styled components */
-import { StyledContainer, MetaverseImg, Shape } from './styled';
+import { StyledContainer, Shape } from './styled';
 /**import custom components */
 import Button from 'components/button';
 /**import images */
-import Home_People_1_Img from 'assets/images/Home-people-1.png';
+// import Home_People_1_Img from 'assets/images/Home-people-1.png';
 
 const MetaverseContainer: React.FC = () => {
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const MetaverseContainer: React.FC = () => {
   return (
     <>
       <StyledContainer>
-        <MetaverseImg src={Home_People_1_Img} alt="Home-people-1-img" />
+        {/* <MetaverseImg src={Home_People_1_Img} alt="Home-people-1-img" /> */}
         <Shape>
           <h1>Enter Flair’s Metaverse</h1>
           <h3>Build your own space and explore the world of fashion </h3>
@@ -26,7 +26,7 @@ const MetaverseContainer: React.FC = () => {
             background="#000000"
             paddingLeft={26}
             paddingRight={30}
-            onClick={() => navigate('/profile/empty')}
+            onClick={() => navigate('/brands')}
           >
             <span>Start Now</span>
             <span>→</span>

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 /**import styled components */
 import { StyledContainer, Avatar } from './styled';
 /**import layout */
-import Header from 'containers/profile/layout/header';
+import Header from 'containers/layout/header';
 /**import custom components */
 import Button from 'components/button';
 /**import images */

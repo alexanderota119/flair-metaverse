@@ -21,7 +21,7 @@ export const CustomLoadingContent = styled.div`
   width: 150px;
   height: 150px;
   background: transparent;
-  border: 3px solid #3c3c3c;
+  border: 2px solid #3c3c3c;
   border-radius: 50%;
   text-align: center;
   line-height: 150px;
@@ -35,13 +35,13 @@ export const CustomLoadingContent = styled.div`
   &:before {
     content: '';
     position: absolute;
-    top: -3px;
-    left: -3px;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 100%;
     border: 3px solid transparent;
-    border-top: 3px solid #0ef1f1;
-    border-right: 3px solid #0ef1f1;
+    border-top: 4px solid #0ef1f1;
+    border-right: 4px solid #0ef1f1;
     border-radius: 50%;
     animation: animateC 2s linear infinite;
     @keyframes animateC {

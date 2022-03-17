@@ -16,11 +16,12 @@ import {
   CardContentWrapper,
   ProfileInfo,
   PersonImg,
-  HomeBack2,
-  Content,
+  // HomeBack2,
+  // Content,
   SwiperOut,
   NavigationNext,
   NavigationPrev,
+  Divider,
 } from './styled';
 /**import custom components */
 import Button from 'components/button';
@@ -44,6 +45,9 @@ const CollectionsContainer: React.FC = () => {
   return (
     <>
       <StyledContainer>
+        <div className="absolute_img">
+          <div className="home-bg-3" />
+        </div>
         <h1>See what people are collecting</h1>
         <SwiperOut>
           <NavigationPrev className="prevc">→</NavigationPrev>
@@ -238,7 +242,7 @@ const CollectionsContainer: React.FC = () => {
           <NavigationNext className="nextc">→</NavigationNext>
         </SwiperOut>
       </StyledContainer>
-      <HomeBack2>
+      {/* <HomeBack2>
         <Content>
           <h1>Decentralized</h1>
           <h2>and unstoppable</h2>
@@ -247,7 +251,8 @@ const CollectionsContainer: React.FC = () => {
             freely and transactions will never be stopped.
           </span>
         </Content>
-      </HomeBack2>
+      </HomeBack2> */}
+      <Divider />
     </>
   );
 };

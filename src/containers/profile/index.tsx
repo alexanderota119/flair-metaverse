@@ -25,7 +25,7 @@ import {
   CardDescription,
 } from './styled';
 /**import layout */
-import Header from './layout/header';
+import Header from '../layout/header';
 /**import custom components */
 import Button from 'components/button';
 /**import images */

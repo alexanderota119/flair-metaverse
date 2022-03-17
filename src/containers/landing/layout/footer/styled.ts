@@ -11,18 +11,8 @@ export const StyledContainer = styled.div`
   align-items: center;
 `;
 
-export const Divider = styled.div`
-  background: #292929;
-  width: 100%;
-  height: 3px;
-
-  @media screen and (max-width: 1200px) {
-    width: 90vw;
-  }
-`;
-
 export const Title = styled.h2`
-  margin-top: 80px;
+  margin-top: 100px;
   font-weight: 700;
   font-size: 32.46px;
   letter-spacing: 0.74;

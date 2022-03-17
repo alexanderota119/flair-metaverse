@@ -8,6 +8,7 @@ export const HeaderContainer = styled.div`
   align-items: center;
   padding: 14px 30px 0px 37px;
   align-self: center;
+  z-index: 7;
 
   h1 {
     font-weight: 700;

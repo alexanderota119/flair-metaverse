@@ -5,8 +5,6 @@ export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(${Home_Bg_1_Img}) no-repeat;
-  background-size: 100% 100%;
   width: 100vw;
   height: auto;
 
@@ -18,10 +16,19 @@ export const StyledContainer = styled.div`
   .swiper-slide {
     cursor: pointer;
   }
+`;
+
+export const TitleContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  background: url(${Home_Bg_1_Img}) no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 690px;
 
   h1 {
     width: 945px;
-    margin-top: 141px;
+    margin-top: 203px;
     color: white;
     font-size: 110px;
     font-weight: 700;
@@ -50,6 +57,182 @@ export const StyledContainer = styled.div`
   @media screen and (max-width: 1600px) {
     background-size: cover;
     background-position: center;
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 43vw;
+
+    h1 {
+      margin-top: 12.68vw;
+    }
+  }
+`;
+
+export const SubTitleContainer = styled.div`
+  align-self: center;
+  width: 1600px;
+  padding-left: 184px;
+  margin-top: 10px;
+
+  h2 {
+    color: white;
+    width: 692px;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 78px;
+    text-align: center;
+
+    @media screen and (max-width: 1000px) {
+      font-size: 60px;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 55px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 8.3vw;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 35px;
+    }
+    @media screen and (max-width: 375px) {
+      font-size: 33px;
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    width: 100vw;
+    padding-left: 50px;
+  }
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+`;
+
+export const ShopContainer = styled.div`
+  margin-top: 45px;
+  max-width: 1600px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .Bitmap1 {
+    z-index: 5;
+  }
+
+  .Bitmap2 {
+    position: absolute;
+    left: -175px;
+    z-index: 3;
+  }
+
+  .Bitmap3 {
+    position: absolute;
+    right: -175px;
+    z-index: 3;
+  }
+`;
+
+export const ShopDescription = styled.div`
+  align-self: center;
+  max-width: 1255px;
+  width: 100%;
+  height: 104px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+
+  span {
+    text-align: right;
+    margin-top: 18px;
+    color: white;
+    width: 750px;
+    font-size: 32px;
+
+    @media screen and (max-width: 950px) {
+      margin-top: 70px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 750px) {
+      font-size: 30px;
+      width: 650px;
+    }
+
+    @media screen and (max-width: 550px) {
+      font-size: 25px;
+      width: 450px;
+    }
+
+    @media screen and (max-width: 425px) {
+      width: 350px;
+    }
+  }
+
+  img {
+    z-index: 7;
+    position: absolute;
+    bottom: 0;
+    left: -78.16px;
+  }
+
+  @media screen and (max-width: 1300px) {
+    margin-right: 30px;
+  }
+
+  @media screen and (max-width: 950px) {
+    justify-content: center;
+    margin-right: 0;
+  }
+`;
+
+export const CollectNFTContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  h2 {
+    margin-top: 82px;
+    font-size: 68px;
+    line-height: 78px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+
+    @media screen and (max-width: 950px) {
+      margin-top: 100px;
+      font-size: 60px;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 55px;
+    }
+
+    @media screen and (max-width: 720px) {
+      margin-top: 150px;
+      width: 650px;
+      line-height: 58px;
+    }
+
+    @media screen and (max-width: 550px) {
+      width: 450px;
+      font-size: 45px;
+    }
+
+    @media screen and (max-width: 450px) {
+      width: 400px;
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: 425px) {
+      width: 400px;
+      font-size: 35px;
+    }
   }
 `;
 

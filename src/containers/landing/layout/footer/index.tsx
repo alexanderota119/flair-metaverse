@@ -3,14 +3,13 @@ import React from 'react';
 import { VscGlobe } from 'react-icons/vsc';
 import { FaAngleDown } from 'react-icons/fa';
 /**import styled components */
-import { StyledContainer, Divider, Title, MoreInfo, ItemList, FooterSection } from './styled';
+import { StyledContainer, Title, MoreInfo, ItemList, FooterSection } from './styled';
 /**import images */
 import SolImg from 'assets/icons/Sol.svg';
 
 const Footer: React.FC = () => {
   return (
     <StyledContainer>
-      <Divider />
       <Title>Get more out of Flair</Title>
       <MoreInfo>
         <ItemList>

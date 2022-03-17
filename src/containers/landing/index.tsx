@@ -1,11 +1,12 @@
 /**import modules */
 import React from 'react';
-/**import styl;ed components */
+/**import styled components */
 import { StyledContainer } from './styled';
 /**import containers */
 import Header from './layout/header';
 import IntroductionContainer from './introduction';
 import MetaverseContainer from './metaverse';
+import AvatarContainer from './avatar';
 import CollectionsContainer from './collections';
 import Footer from './layout/footer';
 
@@ -15,6 +16,7 @@ const Landing: React.FC = () => {
       <Header />
       <IntroductionContainer />
       <MetaverseContainer />
+      <AvatarContainer />
       <CollectionsContainer />
       <Footer />
     </StyledContainer>

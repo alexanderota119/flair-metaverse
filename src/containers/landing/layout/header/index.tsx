@@ -13,9 +13,9 @@ const Header: React.FC = () => {
         <h1>Flair</h1>
       </NavLink>
       <RightCorner>
-        <NavLink to="/profile/empty">Explorer</NavLink>
-        <NavLink to="/profile/create">Create</NavLink>
-        <NavLink to="/profile">
+        <NavLink to="/brands">Explorer</NavLink>
+        <NavLink to="/virtual-store">Create</NavLink>
+        <NavLink to="/profile/empty">
           <img src={ProfileImg} alt="profile-img"></img>
         </NavLink>
       </RightCorner>

@@ -20,6 +20,7 @@ export const MetaverseImg = styled.img`
 `;
 
 export const Shape = styled.div`
+  margin-top: 330px;
   width: 1028px;
   height: 310px;
   background: url(${Shape_Img}) no-repeat;

@@ -6,9 +6,11 @@ const Landing = lazy(() => import('containers/landing'));
 const Profile = lazy(() => import('containers/profile'));
 const CreateProfile = lazy(() => import('containers/profile/create'));
 const EmptyProfile = lazy(() => import('containers/profile/empty'));
-const CreateAvatar = lazy(() => import('containers/profile/avatar/create'));
-const UploadAvatar = lazy(() => import('containers/profile/avatar/upload'));
-const Avatar = lazy(() => import('containers/profile/avatar'));
+const CreateAvatar = lazy(() => import('containers/avatar/create'));
+const UploadAvatar = lazy(() => import('containers/avatar/upload'));
+const Avatar = lazy(() => import('containers/avatar'));
+const Brands = lazy(() => import('containers/brands'));
+const VirtualStore = lazy(() => import('containers/virtual-store'));
 
 const AppRoutes: React.FC = () => {
   return (
@@ -22,6 +24,8 @@ const AppRoutes: React.FC = () => {
         <Route path="avatar/create" element={<CreateAvatar />} />
         <Route path="avatar/upload" element={<UploadAvatar />} />
       </Route>
+      <Route path="brands" element={<Brands />} />
+      <Route path="virtual-store" element={<VirtualStore />} />
     </Routes>
   );
 };

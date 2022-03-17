@@ -19,9 +19,9 @@ const Header: React.FC = () => {
           <input type="text" placeholder="Search items, collections, and accounts" />
         </SearchBar>
         <RightCorner>
-          <Link to="/profile/empty">Explorer</Link>
-          <Link to="/profile/create">Create</Link>
-          <Link to="/profile">
+          <Link to="/brands">Explorer</Link>
+          <Link to="/virtual-store">Create</Link>
+          <Link to="/profile/empty">
             <img src={ProfileImg} alt="profile-img"></img>
           </Link>
         </RightCorner>

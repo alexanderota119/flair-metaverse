@@ -4,18 +4,54 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 /**import styled components */
-import { StyledContainer, SwiperOut, NavigationPrev, NavigationNext, Card, CardHeading, CardContent, CardContentWrpper, CardImg } from './styled';
+import {
+  StyledContainer,
+  TitleContainer,
+  SubTitleContainer,
+  ShopContainer,
+  ShopDescription,
+  CollectNFTContainer,
+  SwiperOut,
+  NavigationPrev,
+  NavigationNext,
+  Card,
+  CardHeading,
+  CardContent,
+  CardContentWrpper,
+  CardImg,
+} from './styled';
 /**import images */
 import Home_shoes_1_Img from 'assets/images/Home-shoes-1.png';
 import Home_clothing_1_Img from 'assets/images/Home-clothing-1.png';
 import Home_shoes_2_Img from 'assets/images/Home-shoes-2.png';
 import Home_clothing_2_Img from 'assets/images/Home-clothing-2.png';
+import Bitmap1_Img from 'assets/images/Bitmap1.png';
+import Bitmap2_Img from 'assets/images/Bitmap2.png';
+import Bitmap3_Img from 'assets/images/Bitmap3.png';
+import Oculus_Img from 'assets/images/Oculus.png';
 
 const IntroductionContainer: React.FC = () => {
   return (
     <>
       <StyledContainer>
-        <h1>Create Your Digital Closet</h1>
+        <TitleContainer>
+          <h1>Build Your Digital Look</h1>
+        </TitleContainer>
+        <SubTitleContainer>
+          <h2>Shop in the Metaverse</h2>
+        </SubTitleContainer>
+        <ShopContainer>
+          <img className="Bitmap1" src={Bitmap1_Img} alt="Bitmap1" width={1255} height={653} />
+          <img className="Bitmap2" src={Bitmap2_Img} alt="Bitmap2" width={812.18} height={500} />
+          <img className="Bitmap3" src={Bitmap3_Img} alt="Bitmap3" width={812.18} height={500} />
+        </ShopContainer>
+        <ShopDescription>
+          <span>Step inside all your favorite brand’s virtual showroom and virtually try-on clothes</span>
+          <img className="Oculus" src={Oculus_Img} alt="Oculus" width={429.32} height={309} />
+        </ShopDescription>
+        <CollectNFTContainer>
+          <h2>Collect NFTs for your avatar</h2>
+        </CollectNFTContainer>
         <SwiperOut>
           <NavigationPrev className="prev">→</NavigationPrev>
           <Swiper

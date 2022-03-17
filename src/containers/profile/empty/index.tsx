@@ -19,7 +19,7 @@ import {
   Divider,
 } from './styled';
 /**import layout */
-import Header from '../layout/header';
+import Header from 'containers/layout/header';
 /**import custom components */
 import Button from 'components/button';
 /**import images */
