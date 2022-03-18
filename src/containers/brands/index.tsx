@@ -22,7 +22,9 @@ const Brands: React.FC = () => {
       <Cards>
         <Card>
           <h3>Ralph Lauren</h3>
-          <img src={Brand1_Img} alt="Brand1" />
+          <figure>
+            <img src={Brand1_Img} alt="Brand1" />
+          </figure>
           <Button
             background="RGBA(0, 0, 0, 0.62)"
             paddingRight={11}
@@ -38,7 +40,9 @@ const Brands: React.FC = () => {
         </Card>
         <Card>
           <h3>Fendi</h3>
-          <img src={Brand2_Img} alt="Brand1" />
+          <figure>
+            <img src={Brand2_Img} alt="Brand2" />
+          </figure>
           <Button
             background="RGBA(0, 0, 0, 0.62)"
             paddingRight={11}
@@ -54,7 +58,9 @@ const Brands: React.FC = () => {
         </Card>
         <Card>
           <h3>Vacheron Constantin</h3>
-          <img src={Brand3_Img} alt="Brand1" />
+          <figure>
+            <img src={Brand3_Img} alt="Brand3" />
+          </figure>
           <Button
             background="RGBA(0, 0, 0, 0.62)"
             paddingRight={11}
@@ -70,7 +76,9 @@ const Brands: React.FC = () => {
         </Card>
         <Card>
           <h3>Christian Dior</h3>
-          <img src={Brand4_Img} alt="Brand1" />
+          <figure>
+            <img src={Brand4_Img} alt="Brand4" />
+          </figure>
           <Button
             background="RGBA(0, 0, 0, 0.62)"
             paddingRight={11}
@@ -86,7 +94,9 @@ const Brands: React.FC = () => {
         </Card>
         <Card>
           <h3>Mytheresa</h3>
-          <img src={Brand5_Img} alt="Brand1" />
+          <figure>
+            <img src={Brand5_Img} alt="Brand5" />
+          </figure>
           <Button
             background="RGBA(0, 0, 0, 0.62)"
             paddingRight={11}
@@ -101,7 +111,9 @@ const Brands: React.FC = () => {
         </Card>
         <Card>
           <h3>Lee</h3>
-          <img src={Brand6_Img} alt="Brand1" />
+          <figure>
+            <img src={Brand6_Img} alt="Brand6" />
+          </figure>
           <Button
             background="RGBA(0, 0, 0, 0.62)"
             paddingRight={11}

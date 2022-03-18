@@ -34,6 +34,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
+  figure {
+    padding: 0;
+    margin: 0;
+  }
+
   #root {
     overflow: hidden;
   }

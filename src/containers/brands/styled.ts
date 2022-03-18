@@ -70,10 +70,26 @@ export const Card = styled.div`
     }
   }
 
-  img {
-    width: 100%;
-    height: auto;
-    align-self: center;
+  figure {
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+    :hover {
+      img {
+        filter: brightness(200%);
+        transform: scale(1.2);
+      }
+    }
+
+    img {
+      transform-origin: 50% 65%;
+      transition: transform 2s, filter 2s ease-in-out;
+      filter: brightness(100%);
+      width: 100%;
+      height: auto;
+      align-self: center;
+      cursor: pointer;
+    }
   }
 
   @media screen and (max-width: 1500px) {
