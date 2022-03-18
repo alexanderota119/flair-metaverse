@@ -58,14 +58,6 @@ export const TitleContainer = styled.div`
     background-size: cover;
     background-position: center;
   }
-
-  @media screen and (min-width: 1600px) {
-    height: 43vw;
-
-    h1 {
-      margin-top: 12.68vw;
-    }
-  }
 `;
 
 export const SubTitleContainer = styled.div`

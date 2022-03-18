@@ -30,7 +30,7 @@ const Button = styled.div<ButtonProps>`
     font-weight: 700;
   }
   :hover {
-    margin-top: -5px;
+    transform: scale(0.95);
   }
 
   :active {

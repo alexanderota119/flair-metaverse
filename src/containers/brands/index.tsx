@@ -1,5 +1,6 @@
 /**import modules */
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 /**import styled components */
 import { StyledContainer, Cards, Card, Divider } from './styled';
 /**import layout */
@@ -15,6 +16,7 @@ import Brand5_Img from 'assets/images/Brand5.png';
 import Brand6_Img from 'assets/images/Brand6.png';
 
 const Brands: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <StyledContainer>
       <Header />
@@ -22,17 +24,10 @@ const Brands: React.FC = () => {
       <Cards>
         <Card>
           <h3>Ralph Lauren</h3>
-          <figure>
+          <figure onClick={() => navigate('/store')}>
             <img src={Brand1_Img} alt="Brand1" />
           </figure>
-          <Button
-            background="RGBA(0, 0, 0, 0.62)"
-            paddingRight={11}
-            paddingLeft={25}
-            width={316}
-            height={62}
-            // onClick={() => navigate('/profile')}
-          >
+          <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
             <span>→</span>
           </Button>
@@ -40,17 +35,10 @@ const Brands: React.FC = () => {
         </Card>
         <Card>
           <h3>Fendi</h3>
-          <figure>
+          <figure onClick={() => navigate('/store')}>
             <img src={Brand2_Img} alt="Brand2" />
           </figure>
-          <Button
-            background="RGBA(0, 0, 0, 0.62)"
-            paddingRight={11}
-            paddingLeft={25}
-            width={316}
-            height={62}
-            // onClick={() => navigate('/profile')}
-          >
+          <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
             <span>→</span>
           </Button>
@@ -58,17 +46,10 @@ const Brands: React.FC = () => {
         </Card>
         <Card>
           <h3>Vacheron Constantin</h3>
-          <figure>
+          <figure onClick={() => navigate('/store')}>
             <img src={Brand3_Img} alt="Brand3" />
           </figure>
-          <Button
-            background="RGBA(0, 0, 0, 0.62)"
-            paddingRight={11}
-            paddingLeft={25}
-            width={316}
-            height={62}
-            // onClick={() => navigate('/profile')}
-          >
+          <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
             <span>→</span>
           </Button>
@@ -76,17 +57,10 @@ const Brands: React.FC = () => {
         </Card>
         <Card>
           <h3>Christian Dior</h3>
-          <figure>
+          <figure onClick={() => navigate('/store')}>
             <img src={Brand4_Img} alt="Brand4" />
           </figure>
-          <Button
-            background="RGBA(0, 0, 0, 0.62)"
-            paddingRight={11}
-            paddingLeft={25}
-            width={316}
-            height={62}
-            // onClick={() => navigate('/profile')}
-          >
+          <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
             <span>→</span>
           </Button>
@@ -94,24 +68,17 @@ const Brands: React.FC = () => {
         </Card>
         <Card>
           <h3>Mytheresa</h3>
-          <figure>
+          <figure onClick={() => navigate('/store')}>
             <img src={Brand5_Img} alt="Brand5" />
           </figure>
-          <Button
-            background="RGBA(0, 0, 0, 0.62)"
-            paddingRight={11}
-            paddingLeft={25}
-            width={316}
-            height={62}
-            // onClick={() => navigate('/profile')}
-          >
+          <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
             <span>→</span>
           </Button>
         </Card>
         <Card>
           <h3>Lee</h3>
-          <figure>
+          <figure onClick={() => navigate('/store')}>
             <img src={Brand6_Img} alt="Brand6" />
           </figure>
           <Button
@@ -120,7 +87,7 @@ const Brands: React.FC = () => {
             paddingLeft={25}
             width={316}
             height={62}
-            // onClick={() => navigate('/profile')}
+            onClick={() => navigate('/store')}
             style={{
               marginBottom: '83px',
             }}

@@ -11,6 +11,7 @@ const UploadAvatar = lazy(() => import('containers/avatar/upload'));
 const Avatar = lazy(() => import('containers/avatar'));
 const Brands = lazy(() => import('containers/brands'));
 const VirtualStore = lazy(() => import('containers/virtual-store'));
+const Store = lazy(() => import('containers/store'));
 
 const AppRoutes: React.FC = () => {
   return (
@@ -26,6 +27,7 @@ const AppRoutes: React.FC = () => {
       </Route>
       <Route path="brands" element={<Brands />} />
       <Route path="virtual-store" element={<VirtualStore />} />
+      <Route path="store" element={<Store />} />
     </Routes>
   );
 };
