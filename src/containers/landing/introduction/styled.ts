@@ -70,46 +70,45 @@ export const TitleContainer = styled.div`
 
 export const SubTitleContainer = styled.div`
   align-self: center;
-  width: 1600px;
-  padding-left: 184px;
+  width: 1200px;
   margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
 
   h2 {
     color: white;
-    width: 692px;
     font-size: 68px;
     font-weight: 700;
     line-height: 78px;
     text-align: center;
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1300px) {
       font-size: 60px;
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1000px) {
       font-size: 55px;
     }
 
-    @media screen and (max-width: 600px) {
-      font-size: 8.3vw;
+    @media screen and (max-width: 768px) {
+      font-size: 50px;
     }
 
-    @media screen and (max-width: 500px) {
-      font-size: 35px;
-    }
-    @media screen and (max-width: 375px) {
-      font-size: 33px;
+    @media screen and (max-width: 550px) {
+      font-size: 40px;
+      width: 90vw;
+      line-height: 58px;
     }
   }
 
   @media screen and (max-width: 1300px) {
     width: 100vw;
-    padding-left: 50px;
+    margin-left: 7vw;
   }
-  @media screen and (max-width: 1200px) {
-    display: flex;
+
+  @media screen and (max-width: 1255px) {
+    margin-left: 0;
     justify-content: center;
-    padding: 0;
   }
 `;
 
