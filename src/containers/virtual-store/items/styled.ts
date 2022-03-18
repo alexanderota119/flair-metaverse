@@ -120,6 +120,7 @@ export const Card = styled.div`
   border-radius: 25px;
   border: 2px solid RGB(73, 73, 73);
   width: 517px;
+  box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 
   @media screen and (max-width: 1100px) {
     width: 450px;
@@ -127,6 +128,10 @@ export const Card = styled.div`
 
   @media screen and (max-width: 500px) {
     width: 400px;
+  }
+
+  @media screen and (max-width: 424px) {
+    width: 350px;
   }
 
   .card-header {
@@ -156,6 +161,11 @@ export const Card = styled.div`
         width: 350px;
         height: auto;
       }
+
+      @media screen and (max-width: 424px) {
+        width: 300px;
+        height: auto;
+      }
     }
 
     .shoe2 {
@@ -172,12 +182,15 @@ export const Card = styled.div`
         width: 380px;
         height: auto;
       }
+      @media screen and (max-width: 424px) {
+        width: 320px;
+        height: auto;
+      }
     }
   }
 
   .card-content {
     background: transparent;
-    backdrop-filter: blur(25.56px);
     border-top: 2px solid RGB(73, 73, 73);
     padding-left: 23px;
     display: flex;
@@ -205,7 +218,6 @@ export const Card = styled.div`
     border-top: 2px solid RGB(73, 73, 73);
     border-radius: 0 0 25px 25px;
     background: transparent;
-    backdrop-filter: blur(25.56px);
     width: 100%;
     height: 164px;
     display: flex;

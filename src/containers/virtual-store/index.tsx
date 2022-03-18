@@ -9,6 +9,8 @@ import Footer from 'containers/landing/layout/footer';
 import CreateVSContainer from './create-vs';
 import NFTCollectionsContainer from './nft-collections';
 import ItemsContainer from './items';
+import ShowRoomContainer from './showroom';
+import CommunityContainer from './community';
 
 const VirtualStore: React.FC = () => {
   return (
@@ -17,6 +19,8 @@ const VirtualStore: React.FC = () => {
       <CreateVSContainer />
       <NFTCollectionsContainer />
       <ItemsContainer />
+      <ShowRoomContainer />
+      <CommunityContainer />
       <Footer />
     </StyledContainer>
   );
