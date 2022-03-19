@@ -13,6 +13,8 @@ const Brands = lazy(() => import('containers/brands'));
 const VirtualStore = lazy(() => import('containers/virtual-store'));
 const Store = lazy(() => import('containers/store'));
 const Collection = lazy(() => import('containers/collection'));
+const ItemRare = lazy(() => import('containers/item-rare'));
+const ItemCommon = lazy(() => import('containers/item-common'));
 
 const AppRoutes: React.FC = () => {
   return (
@@ -30,6 +32,8 @@ const AppRoutes: React.FC = () => {
       <Route path="virtual-store" element={<VirtualStore />} />
       <Route path="store" element={<Store />} />
       <Route path="collection" element={<Collection />} />
+      <Route path="item-rare" element={<ItemRare />} />
+      <Route path="item-common" element={<ItemCommon />} />
     </Routes>
   );
 };

@@ -121,6 +121,11 @@ export const Card = styled.div`
   border: 2px solid RGB(73, 73, 73);
   width: 517px;
   box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+  cursor: pointer;
+
+  :hover {
+    opacity: 0.5;
+  }
 
   @media screen and (max-width: 1100px) {
     width: 450px;

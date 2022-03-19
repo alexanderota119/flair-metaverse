@@ -1,5 +1,6 @@
 /**import modules */
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 /**import styled components */
 import { StyledContainer, ItemViews, ItemView, Card, Description } from './styled';
 /**import assets */
@@ -7,13 +8,15 @@ import VS_shoes_1_Img from 'assets/images/VS-shoes-1.png';
 import VS_shoes_2_Img from 'assets/images/VS-shoes-2.png';
 
 const ItemsContainer: React.FC = () => {
+  const navigate = useNavigate();
+
   return (
     <StyledContainer>
       <h2>Common or Rare Item</h2>
       <h3>During minting, set the amount of available NFTs</h3>
       <ItemViews>
         <ItemView>
-          <Card>
+          <Card onClick={() => navigate('/item-common')}>
             <div className="card-header">
               <img className="shoe1" src={VS_shoes_1_Img} alt="VS shoes 1" />
             </div>
@@ -36,9 +39,9 @@ const ItemsContainer: React.FC = () => {
           </Description>
         </ItemView>
         <ItemView>
-          <Card>
+          <Card onClick={() => navigate('/item-rare')}>
             <div className="card-header">
-              <img className="shoe2" src={VS_shoes_2_Img} alt="VS shoes 1" />
+              <img className="shoe2" src={VS_shoes_2_Img} alt="VS shoes 2" />
             </div>
             <div className="card-content">
               <span>Nike Waffle One</span>
