@@ -4,13 +4,10 @@ export const StyledContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100vw;
-  min-height: 140vh;
+  min-height: 100vh;
   height: auto;
   align-items: center;
-
-  @media screen and (max-width: 1024px) {
-    min-height: 250vh;
-  }
+  padding-bottom: 100px;
 `;
 
 export const Content = styled.div`
@@ -259,7 +256,6 @@ export const Cards = styled.div`
 
   @media screen and (max-width: 1024px) {
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 10vh;
   }
 
   @media screen and (max-width: 830px) {

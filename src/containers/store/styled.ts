@@ -10,7 +10,7 @@ export const StyledContainer = styled.div`
   height: auto;
   background: white;
   min-height: 100vh;
-  padding-bottom: 158px;
+  padding-bottom: 100px;
 `;
 
 export const TitleSection = styled.div`
@@ -51,70 +51,6 @@ export const IntroductionBackground = styled.div`
   @media screen and (max-width: 1600px) {
     background-size: cover;
     background-position: center;
-  }
-`;
-
-export const Tabs = styled.div`
-  margin-top: 26.2px;
-  display: flex;
-  width: auto;
-  height: 60px;
-  position: relative;
-  justify-content: center;
-
-  .divider {
-    position: absolute;
-    max-width: 1600px;
-    width: 95vw;
-    bottom: 0;
-    border-bottom: 2px solid #d8d8d8;
-  }
-`;
-
-interface TabProps {
-  isActive?: boolean;
-}
-
-export const Tab = styled.div<TabProps>`
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-
-  span {
-    font-size: 18px;
-    color: ${({ isActive }) => (isActive ? '#000' : 'RGB(136, 136, 136)')};
-    font-weight: ${({ isActive }) => (isActive ? 700 : 400)};
-  }
-
-  .underline {
-    display: ${({ isActive }) => (isActive ? 'block' : 'none')};
-    width: 80%;
-    height: 6px;
-    position: absolute;
-    background: #4a90e2;
-    bottom: 0;
-
-    @media screen and (max-width: 800px) {
-      width: 100%;
-    }
-  }
-
-  @media screen and (max-width: 800px) {
-    width: 150px;
-  }
-
-  @media screen and (max-width: 640px) {
-    width: 100px;
-  }
-
-  @media screen and (max-width: 424px) {
-    width: 90px;
   }
 `;
 
@@ -199,6 +135,7 @@ export const Card = styled.div`
   }
 
   img {
+    cursor: pointer;
     width: 100%;
     height: 320px;
 
@@ -213,6 +150,11 @@ export const Card = styled.div`
     @media screen and (max-width: 800px) {
       height: auto;
     }
+    transition: all 0.3s ease-in-out;
+
+    :hover {
+      transform: scale(1.05);
+    }
   }
 `;
 
@@ -222,6 +164,10 @@ export const SubCard = styled.div`
   width: 640px;
   height: 102px;
   border: 1px solid RGB(216, 216, 216);
+
+  > *:not(:last-child) {
+    border-right: 1px solid RGB(216, 216, 216);
+  }
 
   @media screen and (max-width: 1365px) {
     width: 550px;
@@ -243,6 +189,18 @@ export const SubCard = styled.div`
     grid-template-columns: 1fr 1fr;
     width: 60vw;
     height: 204px;
+
+    > :nth-child(even) {
+      border-right: 0px;
+    }
+
+    > :nth-of-type(3) {
+      border-bottom: 0px;
+    }
+
+    > :nth-of-type(4) {
+      border-bottom: 0px;
+    }
   }
 `;
 
@@ -250,7 +208,6 @@ export const SubItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid RGB(221, 221, 221);
 
   .item-count {
     margin-top: 19px;

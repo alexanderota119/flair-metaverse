@@ -7,9 +7,7 @@ export const StyledContainer = styled.div`
   min-height: 100vh;
   height: auto;
   align-items: center;
-  @media screen and (max-width: 1024px) {
-    min-height: 210vh;
-  }
+  padding-bottom: 100px;
 
   h2 {
     margin-top: 88.5px;

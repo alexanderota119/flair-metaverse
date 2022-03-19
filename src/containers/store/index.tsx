@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-import { StyledContainer, TitleSection, IntroductionBackground, Tabs, Tab, TabContent, Item, Card, SubCard, SubItem } from './styled';
+import { StyledContainer, TitleSection, IntroductionBackground, TabContent, Item, Card, SubCard, SubItem } from './styled';
 import Header from 'containers/layout/header';
 import Button from 'components/button';
+import { Tabs, Tab } from 'components/tabs';
 
-import CombinedShape from 'assets/icons/Combined_shape.png';
+import StoreImg from 'assets/icons/Store.png';
 import Tick from 'assets/icons/Tick.png';
 import AdidasLifestyle from 'assets/images/Adidas-lifestyle.png';
 import AdidasCausal from 'assets/images/Adidas-causal.png';
@@ -12,13 +14,15 @@ import AdidasGlasses from 'assets/images/Adidas-glasses.png';
 import AdidasSports from 'assets/images/Adidas-sports.png';
 
 const Store: React.FC = () => {
+  const navigate = useNavigate();
+
   const [tabState, setTabState] = useState<number>(0);
 
   return (
     <StyledContainer>
       <Header />
       <TitleSection>
-        <img src={CombinedShape} alt="CombinedShape" width={64} height={64} />
+        <img src={StoreImg} alt="StoreImg" width={36.27} height={35.36} />
         <h2>Adidas</h2>
         <img src={Tick} alt="Tick" width={49} height={48} />
       </TitleSection>
@@ -27,7 +31,11 @@ const Store: React.FC = () => {
         <span>Enter Store’s Space</span>
         <span>→</span>
       </Button>
-      <Tabs>
+      <Tabs
+        style={{
+          marginTop: '26.2px',
+        }}
+      >
         <Tab isActive={tabState === 0} onClick={() => setTabState(0)}>
           <span>Collections</span>
           <div className="underline" />
@@ -49,7 +57,7 @@ const Store: React.FC = () => {
       <TabContent>
         <Item>
           <Card>
-            <img src={AdidasLifestyle} alt="Adidas Lifestyle" />
+            <img src={AdidasLifestyle} alt="Adidas Lifestyle" onClick={() => navigate('/collection')} />
             <h3>Adidas Lifestyle</h3>
             <SubCard>
               <SubItem>
@@ -77,7 +85,7 @@ const Store: React.FC = () => {
         </Item>
         <Item>
           <Card>
-            <img src={AdidasSports} alt="Adidas Lifestyle" />
+            <img src={AdidasSports} alt="Adidas Lifestyle" onClick={() => navigate('/collection')} />
             <h3>Adidas Sports</h3>
             <SubCard>
               <SubItem>
@@ -105,7 +113,7 @@ const Store: React.FC = () => {
         </Item>
         <Item>
           <Card>
-            <img src={AdidasCausal} alt="Adidas Lifestyle" />
+            <img src={AdidasCausal} alt="Adidas Lifestyle" onClick={() => navigate('/collection')} />
             <h3>Adidas Casual</h3>
             <SubCard>
               <SubItem>
@@ -133,7 +141,7 @@ const Store: React.FC = () => {
         </Item>
         <Item>
           <Card>
-            <img src={AdidasGlasses} alt="Adidas Lifestyle" />
+            <img src={AdidasGlasses} alt="Adidas Lifestyle" onClick={() => navigate('/collection')} />
             <h3>Adidas Glasses</h3>
             <SubCard>
               <SubItem>

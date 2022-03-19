@@ -53,7 +53,7 @@ export const StyledContainer = styled.div`
     align-items: center;
 
     span {
-      width: 312px;
+      /* width: 312px; */
       font-weight: 700;
       font-size: 37px;
       line-height: 47px;
@@ -87,7 +87,7 @@ export const StyledContainer = styled.div`
     align-items: center;
 
     span {
-      width: 345px;
+      /* width: 345px; */
       font-weight: 700;
       font-size: 37px;
       line-height: 47px;

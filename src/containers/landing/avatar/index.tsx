@@ -27,7 +27,10 @@ const AvatarContainer: React.FC = () => {
       </div>
       <div className="person">
         <img src={PersonImg} alt="Person" width={510} height={415} />
-        <span>Personalized Avatar in the Metaverse</span>
+        <span>
+          Personalized Avatar
+          <br /> in the Metaverse
+        </span>
       </div>
     </StyledContainer>
   );

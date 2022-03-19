@@ -3,17 +3,18 @@ import styled from 'styled-components';
 export const HeaderContainerOut = styled.div`
   display: flex;
   width: 100vw;
-  background: #f8f8f8;
+  background: RGBA(248, 248, 248, 0.77);
   height: auto;
   justify-content: center;
   border: 1px solid RGBA(0, 0, 0, 0.05);
+  z-index: 9;
+  backdrop-filter: blur(10px);
 `;
 
 export const HeaderContainer = styled.div`
   max-width: 1600px;
   width: 100%;
   height: 69px;
-  backdrop-filter: blur(10px);
   padding-left: 37px;
   padding-right: 30px;
   display: flex;
