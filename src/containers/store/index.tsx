@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { IoArrowForwardOutline } from 'react-icons/io5';
 
 import { StyledContainer, TitleSection, IntroductionBackground, TabContent, Item, Card, SubCard, SubItem } from './styled';
 import Header from 'containers/layout/header';
@@ -29,7 +30,7 @@ const Store: React.FC = () => {
       <IntroductionBackground />
       <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62}>
         <span>Enter Store’s Space</span>
-        <span>→</span>
+        <IoArrowForwardOutline />
       </Button>
       <Tabs
         style={{

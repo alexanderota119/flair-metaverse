@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaEthereum } from 'react-icons/fa';
 import { useMediaQuery } from 'beautiful-react-hooks';
+import { BiRightArrowAlt, BiLeftArrowAlt } from 'react-icons/bi';
+import { IoArrowForwardOutline } from 'react-icons/io5';
 /**import react swiper modules */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
@@ -50,7 +52,9 @@ const CollectionsContainer: React.FC = () => {
         </div>
         <h1>See what people are collecting</h1>
         <SwiperOut>
-          <NavigationPrev className="prevc">→</NavigationPrev>
+          <NavigationPrev className="prev">
+            <BiLeftArrowAlt />
+          </NavigationPrev>
           <Swiper
             spaceBetween={10}
             slidesPerView={4}
@@ -67,7 +71,7 @@ const CollectionsContainer: React.FC = () => {
               1250: {
                 slidesPerView: 3,
               },
-              870: {
+              890: {
                 slidesPerView: 2,
               },
               0: {
@@ -92,7 +96,7 @@ const CollectionsContainer: React.FC = () => {
                     onClick={() => navigate('/profile')}
                   >
                     <span>Open Profile</span>
-                    <span>→</span>
+                    <IoArrowForwardOutline />
                   </Button>
                 </CardHeading>
                 <CardContent>
@@ -132,7 +136,7 @@ const CollectionsContainer: React.FC = () => {
                     onClick={() => navigate('/profile')}
                   >
                     <span>Open Profile</span>
-                    <span>→</span>
+                    <IoArrowForwardOutline />
                   </Button>
                 </CardHeading>
                 <CardContent>
@@ -175,7 +179,7 @@ const CollectionsContainer: React.FC = () => {
                     onClick={() => navigate('/profile')}
                   >
                     <span>Open Profile</span>
-                    <span>→</span>
+                    <IoArrowForwardOutline />
                   </Button>
                 </CardHeading>
                 <CardContent>
@@ -215,7 +219,7 @@ const CollectionsContainer: React.FC = () => {
                     onClick={() => navigate('/profile')}
                   >
                     <span>Open Profile</span>
-                    <span>→</span>
+                    <IoArrowForwardOutline />
                   </Button>
                 </CardHeading>
                 <CardContent>
@@ -239,7 +243,9 @@ const CollectionsContainer: React.FC = () => {
               </Card>
             </SwiperSlide>
           </Swiper>
-          <NavigationNext className="nextc">→</NavigationNext>
+          <NavigationNext className="next">
+            <BiRightArrowAlt />
+          </NavigationNext>
         </SwiperOut>
       </StyledContainer>
       {/* <HomeBack2>

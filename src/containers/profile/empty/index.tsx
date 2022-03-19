@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FaEthereum } from 'react-icons/fa';
+import { IoArrowForwardOutline } from 'react-icons/io5';
 /**import styled components */
 import {
   StyledContainer,
@@ -51,7 +52,7 @@ const EmptyProfile: React.FC = () => {
               onClick={() => navigate('/profile/avatar/create')}
             >
               <span>Create Your Avatar</span>
-              <span>→</span>
+              <IoArrowForwardOutline />
             </Button>
             <img src={Person_sillhoute_Img} alt="person sillhoute"></img>
           </AvatarCard>
@@ -97,7 +98,7 @@ const EmptyProfile: React.FC = () => {
             onClick={() => navigate('/profile')}
           >
             <span>Explore NFTs</span>
-            <span>→</span>
+            <IoArrowForwardOutline />
           </Button>
         </ClosetContainer>
       </Content>

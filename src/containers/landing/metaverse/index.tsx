@@ -2,6 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMediaQuery } from 'beautiful-react-hooks';
+import { IoArrowForwardOutline } from 'react-icons/io5';
 /**import styled components */
 import { StyledContainer, Shape } from './styled';
 /**import custom components */
@@ -29,7 +30,7 @@ const MetaverseContainer: React.FC = () => {
             onClick={() => navigate('/brands')}
           >
             <span>Start Now</span>
-            <span>→</span>
+            <IoArrowForwardOutline />
           </Button>
         </Shape>
       </StyledContainer>

@@ -1,5 +1,6 @@
 /**import modules */
 import React from 'react';
+import { BiRightArrowAlt, BiLeftArrowAlt } from 'react-icons/bi';
 /**import react swiper modules */
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
@@ -53,7 +54,9 @@ const IntroductionContainer: React.FC = () => {
           <h2>Collect NFTs for your avatar</h2>
         </CollectNFTContainer>
         <SwiperOut>
-          <NavigationPrev className="prev">→</NavigationPrev>
+          <NavigationPrev className="prev">
+            <BiLeftArrowAlt />
+          </NavigationPrev>
           <Swiper
             spaceBetween={10}
             slidesPerView={4}
@@ -131,7 +134,9 @@ const IntroductionContainer: React.FC = () => {
               </Card>
             </SwiperSlide>
           </Swiper>
-          <NavigationNext className="next">→</NavigationNext>
+          <NavigationNext className="next">
+            <BiRightArrowAlt />
+          </NavigationNext>
         </SwiperOut>
       </StyledContainer>
     </>

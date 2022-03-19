@@ -1,6 +1,7 @@
 /**import modules */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { IoArrowForwardOutline } from 'react-icons/io5';
 /**import styled components */
 import { StyledContainer, Cards, Card, Divider } from './styled';
 /**import layout */
@@ -29,7 +30,7 @@ const Brands: React.FC = () => {
           </figure>
           <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
-            <span>→</span>
+            <IoArrowForwardOutline />
           </Button>
           <Divider />
         </Card>
@@ -40,7 +41,7 @@ const Brands: React.FC = () => {
           </figure>
           <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
-            <span>→</span>
+            <IoArrowForwardOutline />
           </Button>
           <Divider />
         </Card>
@@ -51,7 +52,7 @@ const Brands: React.FC = () => {
           </figure>
           <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
-            <span>→</span>
+            <IoArrowForwardOutline />
           </Button>
           <Divider />
         </Card>
@@ -62,7 +63,7 @@ const Brands: React.FC = () => {
           </figure>
           <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
-            <span>→</span>
+            <IoArrowForwardOutline />
           </Button>
           <Divider />
         </Card>
@@ -73,7 +74,7 @@ const Brands: React.FC = () => {
           </figure>
           <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
-            <span>→</span>
+            <IoArrowForwardOutline />
           </Button>
         </Card>
         <Card>
@@ -81,19 +82,9 @@ const Brands: React.FC = () => {
           <figure onClick={() => navigate('/store')}>
             <img src={Brand6_Img} alt="Brand6" />
           </figure>
-          <Button
-            background="RGBA(0, 0, 0, 0.62)"
-            paddingRight={11}
-            paddingLeft={25}
-            width={316}
-            height={62}
-            onClick={() => navigate('/store')}
-            style={{
-              marginBottom: '83px',
-            }}
-          >
+          <Button background="RGBA(0, 0, 0, 0.62)" paddingRight={11} paddingLeft={25} width={316} height={62} onClick={() => navigate('/store')}>
             <span>Enter Store’s Space</span>
-            <span>→</span>
+            <IoArrowForwardOutline />
           </Button>
         </Card>
       </Cards>

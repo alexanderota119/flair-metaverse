@@ -1,6 +1,7 @@
 /**import modules */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { IoArrowForwardOutline } from 'react-icons/io5';
 /**import styled components */
 import { StyledContainer, AvatarSection, AvatarOut, Avatar } from './styled';
 /**import layout */
@@ -51,7 +52,7 @@ const UploadAvatar: React.FC = () => {
         onClick={() => navigate('/profile/avatar')}
       >
         <span>Create Avatar</span>
-        <span>→</span>
+        <IoArrowForwardOutline />
       </Button>
     </StyledContainer>
   );

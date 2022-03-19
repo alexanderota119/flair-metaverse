@@ -68,18 +68,17 @@ export const SwiperOut = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  grid-gap: 15px;
+  grid-gap: 10px;
 `;
 
 export const NavigationPrev = styled.span`
   margin-top: 255.39px;
   color: white;
-  font-size: 44.21px;
+  font-size: 50px;
   font-weight: 700;
   cursor: pointer;
-  transform: rotate(180deg);
   z-index: 3;
-  @media screen and (max-width: 510px) {
+  @media screen and (max-width: 530px) {
     display: none;
   }
 `;
@@ -87,11 +86,11 @@ export const NavigationPrev = styled.span`
 export const NavigationNext = styled.span`
   margin-top: 255.39px;
   color: white;
-  font-size: 44.21px;
+  font-size: 50px;
   font-weight: 700;
   cursor: pointer;
   z-index: 3;
-  @media screen and (max-width: 510px) {
+  @media screen and (max-width: 530px) {
     display: none;
   }
 `;

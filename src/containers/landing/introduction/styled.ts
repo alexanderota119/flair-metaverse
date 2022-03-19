@@ -233,7 +233,7 @@ export const SwiperOut = styled.div`
   padding: 0 30px 0 30px;
   display: flex;
   align-items: center;
-  grid-gap: 22px;
+  grid-gap: 15px;
   margin-bottom: -100.88px;
   @media screen and (max-width: 530px) {
     padding: 0 20px 0 20px;
@@ -243,10 +243,9 @@ export const SwiperOut = styled.div`
 export const NavigationPrev = styled.span`
   margin-top: 222.44px;
   color: white;
-  font-size: 44.21px;
+  font-size: 50px;
   font-weight: 700;
   cursor: pointer;
-  transform: rotate(180deg);
   z-index: 3;
   @media screen and (max-width: 530px) {
     display: none;
@@ -256,7 +255,7 @@ export const NavigationPrev = styled.span`
 export const NavigationNext = styled.span`
   margin-top: 222.44px;
   color: white;
-  font-size: 44.21px;
+  font-size: 50px;
   font-weight: 700;
   cursor: pointer;
   z-index: 3;

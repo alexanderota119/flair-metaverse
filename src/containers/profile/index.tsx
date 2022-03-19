@@ -1,5 +1,6 @@
 /**import modules */
 import React, { useState } from 'react';
+import { IoArrowForwardOutline } from 'react-icons/io5';
 // import { useNavigate } from 'react-router-dom';
 import { FaEthereum } from 'react-icons/fa';
 /**import styled components */
@@ -65,7 +66,7 @@ const Profile: React.FC = () => {
               // onClick={() => navigate('/profile/avatar/create')}
             >
               <span>Enter Mark’s Space</span>
-              <span>→</span>
+              <IoArrowForwardOutline />
             </Button>
             <img src={Person_mark_Img} alt="person sillhoute"></img>
           </AvatarCard>

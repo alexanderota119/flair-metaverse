@@ -1,6 +1,7 @@
 /**import modules */
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { IoArrowForwardOutline } from 'react-icons/io5';
 /**import styled components */
 import { StyledContainer, Avatar } from './styled';
 /**import layout */
@@ -32,7 +33,7 @@ const HiAvatar: React.FC = () => {
         onClick={() => navigate('/profile')}
       >
         <span>Back to Profile</span>
-        <span>→</span>
+        <IoArrowForwardOutline />
       </Button>
     </StyledContainer>
   );

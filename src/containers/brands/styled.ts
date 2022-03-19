@@ -6,6 +6,7 @@ export const StyledContainer = styled.div`
   width: 100vw;
   height: auto;
   align-items: center;
+  padding-bottom: 100px;
 
   h2 {
     margin-top: 83px;

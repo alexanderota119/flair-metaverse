@@ -29,6 +29,11 @@ const Button = styled.div<ButtonProps>`
   span {
     font-weight: 700;
   }
+
+  svg {
+    font-size: 22px;
+  }
+
   :hover {
     transform: scale(0.95);
   }
