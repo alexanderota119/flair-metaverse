@@ -121,10 +121,6 @@ export const LeftSection = styled.div`
   display: flex;
   flex-direction: column;
 
-  @media screen and (max-width: 1100px) {
-    margin-top: 50px;
-  }
-
   @media screen and (max-width: 550px) {
     width: 400px;
   }
@@ -137,6 +133,10 @@ export const LeftSection = styled.div`
     font-size: 32px;
     font-weight: 700;
     line-height: 33px;
+    @media screen and (max-width: 424px) {
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 
   h4 {
@@ -188,6 +188,10 @@ export const OwnerCard = styled.div`
   img {
     position: absolute;
     bottom: 0;
+  }
+
+  @media screen and (max-width: 424px) {
+    margin-top: 80px;
   }
 `;
 
