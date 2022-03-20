@@ -57,13 +57,13 @@ const CretionCollecton: React.FC = () => {
               </div>
             </ImageUpload>
             <h3>Name</h3>
-            <Input width={794} height={69} fontSize={20} borderRadius="14px" borderColor="RGB(175, 175, 175)" />
+            <Input width={794} height={69} fontSize={31} borderRadius="14px" borderColor="RGB(175, 175, 175)" />
             <h3>URL</h3>
-            <Input width={794} height={69} fontSize={20} borderRadius="14px" borderColor="RGB(175, 175, 175)" />
+            <Input width={794} height={69} fontSize={31} borderRadius="14px" borderColor="RGB(175, 175, 175)" />
             <h3>Description</h3>
-            <Input width={794} height={69} fontSize={20} borderRadius="14px" borderColor="RGB(175, 175, 175)" />
+            <Input width={794} height={69} fontSize={31} borderRadius="14px" borderColor="RGB(175, 175, 175)" />
             <h3>Store (Optional)</h3>
-            <Input width={794} height={69} fontSize={20} borderRadius="14px" borderColor="RGB(175, 175, 175)" />
+            <Input width={794} height={69} fontSize={31} borderRadius="14px" borderColor="RGB(175, 175, 175)" />
           </FormGroup>
         </CollectionForm>
         <Divider width="100%" height="1px" />

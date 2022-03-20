@@ -17,6 +17,8 @@ const ItemRare = lazy(() => import('containers/item-rare'));
 const ItemCommon = lazy(() => import('containers/item-common'));
 const CreationStore = lazy(() => import('containers/creation-store'));
 const CreationCollection = lazy(() => import('containers/creation-collection'));
+const CreationItem = lazy(() => import('containers/creation-item'));
+const ConnectWallet = lazy(() => import('containers/connect-wallet'));
 
 const AppRoutes: React.FC = () => {
   return (
@@ -38,6 +40,8 @@ const AppRoutes: React.FC = () => {
       <Route path="item-common" element={<ItemCommon />} />
       <Route path="creation-store" element={<CreationStore />} />
       <Route path="creation-collection" element={<CreationCollection />} />
+      <Route path="creation-item" element={<CreationItem />} />
+      <Route path="connect-wallet" element={<ConnectWallet />} />
     </Routes>
   );
 };
