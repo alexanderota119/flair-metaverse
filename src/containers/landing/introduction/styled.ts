@@ -58,6 +58,10 @@ export const TitleContainer = styled.div`
     background-size: cover;
     background-position: center;
   }
+
+  /* @media screen and (min-width: 1600px) {
+    height: 43vw;
+  } */
 `;
 
 export const SubTitleContainer = styled.div`

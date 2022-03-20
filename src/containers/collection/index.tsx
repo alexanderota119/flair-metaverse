@@ -142,9 +142,27 @@ const Collecton: React.FC = () => {
               <PriceSection>
                 <Select defaultValue={selectedOption} onChange={() => setSelectedOption} options={options} />
                 <div className="price-amount">
-                  <Input type="text" placeholder="Min" />
+                  <Input
+                    width={150}
+                    height={50}
+                    borderColor="RGB(216, 216, 216)"
+                    borderRadius="10px"
+                    fontSize={18}
+                    fontWeight={600}
+                    type="text"
+                    placeholder="Min"
+                  />
                   <span>to</span>
-                  <Input type="text" placeholder="Max" />
+                  <Input
+                    width={150}
+                    height={50}
+                    borderColor="RGB(216, 216, 216)"
+                    borderRadius="10px"
+                    fontSize={18}
+                    fontWeight={600}
+                    type="text"
+                    placeholder="Max"
+                  />
                 </div>
                 <span style={{ color: 'RGB(142, 142, 147)', alignSelf: 'center' }}>Apply</span>
               </PriceSection>

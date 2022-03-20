@@ -1,13 +1,22 @@
 import styled from 'styled-components';
 
-const Input = styled.input`
-  width: 150px;
-  height: 50px;
-  font-size: 18px;
-  font-weight: 600;
+interface InputProps {
+  width: number;
+  height: number;
+  borderColor: string;
+  borderRadius: string;
+  fontSize: number;
+  fontWeight?: number;
+}
+
+const Input = styled.input<InputProps>`
+  width: ${({ width }) => `${width}px`};
+  height: ${({ height }) => `${height}px`};
+  font-size: ${({ fontSize }) => `${fontSize}px`};
+  font-weight: ${({ fontWeight }) => fontWeight};
   outline: none;
-  border: 1px solid RGB(216, 216, 216);
-  border-radius: 10px;
+  border: ${({ borderColor }) => `1px solid ${borderColor}`};
+  border-radius: ${({ borderRadius }) => borderRadius};
   padding: 0 15px 0 10px;
 `;
 

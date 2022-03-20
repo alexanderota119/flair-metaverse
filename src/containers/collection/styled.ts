@@ -167,7 +167,7 @@ export const FilterSection = styled.div`
   display: flex;
   flex-direction: column;
   border: 1px solid RGB(216, 216, 216);
-  overflow-y: scroll;
+  overflow-y: auto;
 
   @media screen and (max-width: 424px) {
     width: 360px;

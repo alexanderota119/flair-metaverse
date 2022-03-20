@@ -16,6 +16,7 @@ const Collection = lazy(() => import('containers/collection'));
 const ItemRare = lazy(() => import('containers/item-rare'));
 const ItemCommon = lazy(() => import('containers/item-common'));
 const CreationStore = lazy(() => import('containers/creation-store'));
+const CreationCollection = lazy(() => import('containers/creation-collection'));
 
 const AppRoutes: React.FC = () => {
   return (
@@ -36,6 +37,7 @@ const AppRoutes: React.FC = () => {
       <Route path="item-rare" element={<ItemRare />} />
       <Route path="item-common" element={<ItemCommon />} />
       <Route path="creation-store" element={<CreationStore />} />
+      <Route path="creation-collection" element={<CreationCollection />} />
     </Routes>
   );
 };
